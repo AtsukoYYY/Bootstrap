@@ -1,8 +1,13 @@
-.row {
-    height: 90px;
-    background-color: #ddd;
+html {
+    font-size: 14px;
 }
 
-.row div {
-    height: 30px;
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.pricing-header {
+    max-width: 700px;
 }
