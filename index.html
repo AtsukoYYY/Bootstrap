@@ -4,6 +4,7 @@
     <title>test</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,6 +15,52 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 
+    <!-- col-xx ・・・　xxより画面サイズが大きいときに適用される -->
+    <div class="row align-items-center">
+        <div class="bg-primary">1</div>
+        <div class="bg-danger">2</div>
+        <div class="bg-success">3</div>
+    </div>
+
+    <!-- itemに設定した内容のほうが強い -->
+    <div class="row align-items-center">
+        <div class="col-6 align-self-start bg-primary">1</div>
+        <div class="col-4 align-self-center bg-danger">2</div>
+        <div class="col-2 align-self-end bg-success">3</div>
+    </div>
+
+    <div class="row justify-content-between">
+        <div class="col-1 bg-primary">1</div>
+        <div class="col-2 bg-danger">2</div>
+        <div class="col-3 bg-success">3</div>
+        <div class="col-4 bg-primary">4</div>
+        <div class="col-1 bg-danger">5</div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-md order-md-last bg-primary">1</div>
+        <div class="col-md bg-danger">2</div>
+        <div class="col-md bg-success">3</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md bg-primary">1</div>
+        <div class="offset-md-2 col-sm-6 col-md bg-danger">2</div>
+        <div class="col-sm-12 col-md bg-success">3</div>
+    </div>
+
+    <div class="row">
+        <div class="col-5 bg-primary">
+            <div class="row">
+                <div class="col bg-warning">1-1</div>
+                <div class="col bg-dark">1-2</div>
+            </div>
+        </div>
+        <div class="col-7 bg-danger">
+            2
+        </div>
+
+    </div>
 </body>
 
 
